@@ -14,6 +14,8 @@ namespace ThisIsMyLib
             get { return GreetingsEnum.HeyHo; }
         }
 
+        public MyEnum ThisShirt = MyEnum.HasPinkShirts;
+
 
     }
 }
