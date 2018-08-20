@@ -31,7 +31,7 @@ namespace DidntFindMyClassAndMethod
             string p = Path.GetDirectoryName(new System.Uri(System.Reflection.Assembly.GetExecutingAssembly().CodeBase).LocalPath);
             string pp = Path.Combine(p,@"..\..\..\.." , assemblyPath);
             string newPath = pp;
-            return Assembly.Load(File.ReadAllBytes(newPath));
+            return Assembly.LoadFrom(newPath);
         }
 
         public static Type[] GetTypes(Assembly assembly)
